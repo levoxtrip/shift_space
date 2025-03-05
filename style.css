@@ -1,0 +1,148 @@
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+  }
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.webgl-content * {border: 0; margin: 0; padding: 0}
+/*.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}*/
+
+.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.webgl-content .logo {background: url('TemplateData/progressLogo.Light.png') no-repeat center / contain; width: 154px; height: 130px;}
+.webgl-content .progress {height: 18px; width: 141px; margin-top: 90px;}
+.webgl-content .progress .empty {background: url('TemplateData/progressEmpty.Light.png') no-repeat right / cover; float: right; width: 100%; height: 100%; display: inline-block;}
+.webgl-content .progress .full {background: url('TemplateData/progressFull.Light.png') no-repeat left / cover; float: left; width: 0%; height: 100%; display: inline-block;}
+
+.webgl-content .logo.Dark {background-image: url('TemplateData/progressLogo.Dark.png');}
+.webgl-content .progress.Dark .empty {background-image: url('TemplateData/progressEmpty.Dark.png');}
+.webgl-content .progress.Dark .full {background-image: url('TemplateData/progressFull.Dark.png');}
+
+.webgl-content .footer * {float: right; margin-left: 1em;}
+
+.webgl-content .footer {margin-top: 5px; height: 38px; line-height: 38px; font-size: 18px;}
+.webgl-content .footer .webgl-logo, .title, .fullscreen {height: 100%; display: inline-block; background: transparent center no-repeat;}
+.webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
+.webgl-content .footer .title {margin-right: 10px; float: right;}
+.webgl-content .footer .fullscreen {background-image: url('TemplateData/fullscreen.png'); width: 38px; float: right;}
+
+
+
+#unityContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+    width: 2048px;
+    max-width: 100vw;
+    height: auto;
+    max-height: 100vh;
+    
+}
+
+.img-block{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.img{
+    width: 100%;
+    max-width: 1280px;
+}
+
+.text{
+    font-size: 2vw;
+    margin-left:20vw;
+
+}
+
+
+
+
+}
+
+.impressumlink{
+    float: right;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    top: 100px;
+    left: 100px;
+ 
+}   
+
+.htwlink{
+    top: 200px;
+    left: 100px;
+}   
+
+.indexlink{
+    float: right;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    top: 100px;
+    left: 100px;
+}   
+
+#logo{
+    background-image: url('logo.png'); 
+    float: right;
+    top: 30px;
+    left: 30px;
+
+}
+#logoimage{
+    width: 100px;
+    height: 100px;
+}
+
+#impressumtext{
+    top: 100px;
+    left: 100px;
+
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 10;
+    
+}
+
+@media (max-width: 900px){
+   #overlay{
+        
+        display:block;
+        color:red;
+        
+        
+    }
+    #unityContainer{
+        display: none;
+        opacity: 0;
+        
+    }
+    
+    .text{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 6vw;
+    margin-left:8vw;
+    margin-right:5vw;
+    
+    
+}
+    
+  
+
+
+}   
