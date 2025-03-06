@@ -1,86 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>shift space - digital gallery </title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>shift space - digital gallery</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BUILD_11_08.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/BUILD_11_08.json",
+        { onProgress: UnityProgress }
+      );
     </script>
-</head>
+  </head>
 
-<body>
-   
-        <div class="img-block">
-                <img class="img" src="header_big.jpg">
-        </div>
-        
-        <div class="img-block">
-                <p class="text">Shift space is an interactive online gallery.<br>
-                In 2020, the relevance of online cultural spaces increases<br>
-                due to the corona pandemic and its consequences.</p>
-        </div>
-        
-        <div class="img-block">
-                <p class="text">We as shift space wanted to rethink the way art is exhibitied online.
-                <br>
-                But we did not just reproduce the analogue experience. <br>
-                We intended to develop a real alternative to the everyday gallery<br>
-                by using the opportunities of digital spaces. </p>
-        </div>
-        
-        <div class="img-block">
-                <p class="text">For the following exhibition we curated the works of nine artist<br>
-                from different fields. We are deeply grateful for their contribution!<br>
-                
-                Enjoy exploring shift space!</p>
-        </div>
-        <br>
-            <div class="img-block">
-                <p class="text"><strong>Please wait until the shift space window below is fully loaded!</strong><br>
-                This experience is optimized for google chrome desktop browser.<br>
-                
-        </div>
-        <br>
-        
-        <div class="webgl-content">
-            
-            <div id="overlay">
-            <p class="text">Shift Gallery is not supported on mobile devices. <br>
-                Please visit us again in your browser. <br>
-                Google Chrome works best!
-            </p>
-            </div>
-            
-            
-            <div id="unityContainer"></div>
-            
-            
-            
-            
-            <div class="footer">
-             
-                
-                <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-                <div class="impressumlink"><a href="impressum.html" target="_blank">impressum</a></div>
-    
-                <div id="logo">
-                    <img id="logoImage" src=""> 
-                </div>
-    
-            </div>
-           
-        </div>
-        
-        
-        
-</body>
+  <body>
+    <div class="img-block">
+      <img class="img" src="header_big.jpg" />
+    </div>
 
+    <div class="img-block">
+      <p class="text">
+        Shift space is an interactive online gallery.<br />
+        In 2020, the relevance of online cultural spaces increases<br />
+        due to the corona pandemic and its consequences.
+      </p>
+    </div>
+
+    <div class="img-block">
+      <p class="text">
+        We as shift space wanted to rethink the way art is exhibitied online.
+        <br />
+        But we did not just reproduce the analogue experience. <br />
+        We intended to develop a real alternative to the everyday gallery<br />
+        by using the opportunities of digital spaces.
+      </p>
+    </div>
+
+    <div class="img-block">
+      <p class="text">
+        For the following exhibition we curated the works of nine artist<br />
+        from different fields. We are deeply grateful for their contribution!<br />
+
+        Enjoy exploring shift space!
+      </p>
+    </div>
+    <br />
+    <div class="img-block">
+      <p class="text">
+        <strong
+          >Please wait until the shift space window below is fully
+          loaded!</strong
+        ><br />
+        <strong>Please experience the shift space in fullscreen !</strong><br />
+        This experience is optimized for google chrome desktop browser.<br />
+      </p>
+    </div>
+
+    <br />
+
+    <div class="webgl-content">
+      <div id="overlay">
+        <p class="text">
+          Shift Gallery is not supported on mobile devices. <br />
+          Please visit us again in your browser. <br />
+          Google Chrome works best!
+        </p>
+      </div>
+      <div>
+        <div id="unityContainer"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      </div>
+      <div class="footer">
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="impressumlink">
+          <a href="impressum.html" target="_blank">impressum</a>
+        </div>
+
+        <div id="logo">
+          <img id="logoImage" src="" />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
